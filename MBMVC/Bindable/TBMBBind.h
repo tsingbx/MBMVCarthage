@@ -44,9 +44,9 @@ typedef enum {
 // TBMBBindableRunSafeThreadStrategy_Ignore 在异步执行前判断bindable是否dealloc 已经dealloc就不执行了 ,对内存友好
 extern void TBMBSetBindableRunSafeThreadStrategy(TBMBBindableRunSafeThreadStrategy strategy);
 
-typedef void (^TBMB_CHANGE_BLOCK)(id old, id new);
+typedef void (^TBMB_CHANGE_BLOCK)(id old, id new_);
 
-typedef void (^TBMB_HOST_CHANGE_BLOCK)(id host, id old, id new);
+typedef void (^TBMB_HOST_CHANGE_BLOCK)(id host, id old, id new_);
 
 typedef void (^TBMB_DEALLOC_BLOCK)();
 
